@@ -32,10 +32,10 @@ bool duplicate(int numbers[], int length, int* duplication) {
 //简易测试
 int main(){
     int duplication;
-    int numbers[] = {2,3,4,1,3,1,55,55};
-    int length = length(numbers);
+    int numbers[] = {2,7,4,1,3,1,7,7};
+    int length = sizeof(numbers)/sizeof(numbers[0]);
     bool j = duplicate(numbers, length, &duplication);
-    cout<<j<<" "<<duplication;
+    cout<<"duplicated? "<<j<<"   duplication: "<<duplication;
     return 0;
 }
 
