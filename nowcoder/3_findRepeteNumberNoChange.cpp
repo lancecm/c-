@@ -18,10 +18,6 @@ int countRange(const int* numbers, int length, int start, int end){
 int getDuplication(const int*numbers, int length){
     // 验证输入条件
     if(numbers==nullptr||length<0) return -1;
-    for(int i=0; i<length; i++){
-        if(numbers[i]<1 && numbers[i]>length-1)
-            return -1;
-    }
 
     int start = 1;        //最小
     int end = length-1;   //最大
